@@ -6,7 +6,7 @@
 }
 
 .user-info p {
-  font-size: 11px;
+  font-size: var(--text-preset-4-font-size);
   font-weight: var(--text-preset-4-font-weight);
   line-height: var(--text-preset-4-line-height);
   letter-spacing: var(--text-preset-4-letter-spacing);

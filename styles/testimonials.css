@@ -1,31 +1,28 @@
 .testimonials {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 19.0625rem;
+  padding: 2rem;
   gap: 2rem;
-  margin-block: 4.5625rem;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   border-radius: 0.5rem;
   padding: 2rem;
-  gap: 1rem;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .user-info {
   display: flex;
   align-items: center;
-  max-height: 1.875rem;
-  gap: 1.0625rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .user-info img {
   width: 28px;
   height: 28px;
-  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -116,4 +113,48 @@
 
 .card-5 .testimonial-quote .detail {
   color: var(--color-grey-400);
+}
+
+@media (min-width: 48rem) {
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a a"
+      "b c"
+      "d d"
+      "e e";
+  }
+
+  .card-1 {
+    grid-area: a;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+  }
+
+  .card-2 {
+    grid-area: b;
+  }
+
+  .card-3 {
+    grid-area: c;
+  }
+
+  .card-4 {
+    grid-area: d;
+  }
+
+  .card-5 {
+    grid-area: e;
+  }
+}
+
+@media (min-width: 75rem) {
+  .testimonials {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a a b e"
+      "c d d e";
+    gap: 1.5rem;
+  }
 }
