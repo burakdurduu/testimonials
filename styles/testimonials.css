@@ -1,0 +1,119 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 19.0625rem;
+  gap: 2rem;
+  margin-block: 4.5625rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  gap: 1rem;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  max-height: 1.875rem;
+  gap: 1.0625rem;
+}
+
+.user-info img {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-info p {
+  margin-top: 0.25rem;
+}
+
+.testimonial-quote .highlight {
+  margin-bottom: 1rem;
+}
+
+.card-1 {
+  background-color: var(--color-purple-500);
+  color: var(--color-white);
+}
+
+.card-1 .user-info img {
+  border: 2px solid var(--color-purple-300);
+}
+
+.card-1 .user-info p {
+  color: var(--color-purple-50);
+}
+
+.card-1 .testimonial-quote .detail {
+  color: var(--color-purple-50);
+}
+
+.card-2 {
+  background-color: var(--color-grey-500);
+  color: var(--color-white);
+}
+
+.card-2 .user-info p {
+  color: var(--color-grey-200);
+}
+
+.card-2 .testimonial-quote .detail {
+  color: var(--color-grey-100);
+}
+
+.card-3 {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.card-3 .user-info h2 {
+  color: var(--color-grey-500);
+}
+
+.card-3 .user-info p {
+  color: var(--color-grey-400);
+}
+
+.card-3 .testimonial-quote .highlight {
+  color: var(--color-grey-500);
+}
+
+.card-3 .testimonial-quote .detail {
+  color: var(--color-grey-400);
+}
+
+.card-4 {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.card-4 .user-info img {
+  border: 2px solid var(--color-purple-300);
+}
+
+.card-4 .testimonial-quote .highlight {
+  color: var(--color-grey-200);
+}
+
+.card-4 .testimonial-quote .detail {
+  color: var(--color-grey-100);
+}
+
+.card-5 {
+  background-color: var(--color-white);
+  color: var(--color-grey-500);
+}
+
+.card-5 .user-info p {
+  color: var(--color-grey-400);
+}
+
+.card-5 .testimonial-quote .detail {
+  color: var(--color-grey-400);
+}
